@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: skyblue;
+        }
+
+        .welcome {
+            font-size: calc(14px + 10vw);
+            width: 100%;
+            text-align: center;
+            transform: translateY(-100%);
+            color: white;
+        }
+
+        .welcome>span {
+            position: relative;
+            top: 10px;
+            -webkit-animation: bounce 0.8s ease infinite alternate;
+            animation: bounce 0.8s ease infinite alternate;
+            text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+                0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+                0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .welcome>span:nth-child(2) {
+            animation-delay: .1s;
+            -webkit-animation-delay: .1s;
+        }
+
+        .welcome>span:nth-child(3) {
+            animation-delay: .2s;
+            -webkit-animation-delay: .2s;
+        }
+
+        .welcome>span:nth-child(4) {
+            animation-delay: .3s;
+            -webkit-animation-delay: .3s;
+        }
+
+        .welcome>span:nth-child(5) {
+            animation-delay: .4s;
+            -webkit-animation-delay: .4s;
+        }
+
+        .welcome>span:nth-child(6) {
+            animation-delay: .5s;
+            -webkit-animation-delay: .5s;
+        }
+
+        .welcome>span:nth-child(7) {
+            animation-delay: .6s;
+            -webkit-animation-delay: .6s;
+        }
+
+        @-webkit-keyframes bounce {
+            100% {
+                top: -20px;
+                text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+                    0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+                    0 30px 15px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        @keyframes bounce {
+            100% {
+                top: -20px;
+                text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+                    0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+                    0 30px 15px rgba(0, 0, 0, 0.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p class="welcome">
+            <span>w</span>
+            <span>e</span>
+            <span>l</span>
+            <span>c</span>
+            <span>o</span>
+            <span>m</span>
+            <span>e</span>
+        </p>
+    </div>
+</body>
+
+</html>

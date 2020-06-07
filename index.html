@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./src/icon.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="sticky-header">
+            <h1 class="sitename">
+                <a href="/" class="sitename__link">test</a>
+            </h1>
+            <ul class="social-media">
+                <li class="social-item">
+                    <a href="https://facebook.com" class="social-link" target="_blank">
+                        <i class="icon-facebook"></i>
+                        <span class="social-text">facebook</span>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://twitter.com" class="social-link" target="_blank">
+                        <i class="icon-twitter"></i>
+                        <span class="social-text">twitter</span>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://instagram.com" class="social-link" target="_blank">
+                        <i class="icon-instagram"></i>
+                        <span class="social-text">instagram</span>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://youtube.com" class="social-link" target="_blank">
+                        <i class="icon-youtube"></i>
+                        <span class="social-text">youtube</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-expand">
+                <a href="javascript:;" class="menu-btn" @click="openMenu">
+                    <i class="icon-menu"></i>
+                    <span class="menu-text">menu</span>
+                </a>
+
+            </div>
+        </header>
+        <div class="main">
+            <div class="project">
+                <img src="./src/images/abc.jpg" alt="" class="project__image">
+                <div class="project__desc">
+                    This is a paragraph!
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="copyright">&copy; Copyright by Huynq</p>
+        </footer>
+        <transition name="menu-anim">
+            <div class="menu" v-if="isShow" @click="closeMenu">
+                <div class="menu__content">
+                    <p>Follow us:</p>
+                    <ul class="social-media">
+                        <li class="social-item">
+                            <a href="https://facebook.com" class="social-link" target="_blank">
+                                <i class="icon-facebook"></i>
+                                <span class="social-text">facebook</span>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://twitter.com" class="social-link" target="_blank">
+                                <i class="icon-twitter"></i>
+                                <span class="social-text">twitter</span>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://instagram.com" class="social-link" target="_blank">
+                                <i class="icon-instagram"></i>
+                                <span class="social-text">instagram</span>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://youtube.com" class="social-link" target="_blank">
+                                <i class="icon-youtube"></i>
+                                <span class="social-text">youtube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </transition>
+    </div>
+    <script src="./src/vue.min.js"></script>
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
