@@ -46,14 +46,16 @@
                     <i class="icon-menu"></i>
                     <span class="menu-text">menu</span>
                 </a>
-
             </div>
         </header>
         <div class="main">
             <div class="project">
-                <img src="./src/images/abc.jpg" alt="" class="project__image">
-                <div class="project__desc">
-                    This is a paragraph!
+                <img src="./src/images/poster.jpg" alt="" class="project__image">
+                <div class="project__info">
+                    <p class="prod-desc">
+                        This is a paragraph!
+                    </p>
+                    <a href="https://youtube.com" target="_blank" class="prod-link icon-link"><span>youtube</span></a>
                 </div>
             </div>
         </div>
@@ -61,9 +63,9 @@
             <p class="copyright">&copy; Copyright by Huynq</p>
         </footer>
         <transition name="menu-anim">
-            <div class="menu" v-if="isShow" @click="closeMenu">
+            <div class="menu" style="display: none;" v-show="isShow" @click="closeMenu">
                 <div class="menu__content">
-                    <p>Follow us:</p>
+                    <p>Follow us</p>
                     <ul class="social-media">
                         <li class="social-item">
                             <a href="https://facebook.com" class="social-link" target="_blank">
