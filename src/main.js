@@ -1,9 +1,15 @@
 new Vue({
     el: '#app',
+    template: '#template',
     data() {
+        const now = new Date();
+        const target = new Date(2020, 5, 15);
+        const released = now >= target
         return {
             isShow: false,
-        }
+            released,
+            prodLink: released ? 'https://youtube.com/' : 'https://www.youtube.com/user/TheRhymastic'
+        };
     },
     methods: {
         openMenu() {
@@ -11,8 +17,7 @@ new Vue({
         },
         closeMenu(e) {
             if (e.target.classList.contains('menu')) {
-
-                this.isShow = false
+                this.isShow = false;
             }
         }
     }
